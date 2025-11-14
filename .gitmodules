@@ -49,3 +49,12 @@
 [submodule "4-computer-architecture/labs/lab-4"]
 	path = 4-computer-architecture/labs/lab-4
 	url = https://github.com/timur1516-itmo/computer-architecture-lab-4.git
+[submodule "5-functional-programming/labs/lab-0"]
+	path = 5-functional-programming/labs/lab-0
+	url = https://github.com/timur1516-itmo/fp-lab-0.git
+[submodule "5-functional-programming/labs/lab-1"]
+	path = 5-functional-programming/labs/lab-1
+	url = https://github.com/timur1516-itmo/fp-lab-1.git
+[submodule "5-functional-programming/labs/lab-2"]
+	path = 5-functional-programming/labs/lab-2
+	url = https://github.com/timur1516-itmo/fp-lab-2.git
