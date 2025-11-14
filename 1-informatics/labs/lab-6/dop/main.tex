@@ -1,0 +1,204 @@
+\documentclass[a4paper, 9pt]{article}
+\usepackage[english, russian]{babel}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+\usepackage[dvipsnames, svgnames, x11names]{xcolor}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{paracol}
+\usepackage{tkz-euclide}
+\usetikzlibrary{angles}
+\pagestyle{empty} %  выключаенм нумерацию
+\renewcommand{\baselinestretch}{1.5} 
+
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{tempora}
+\usepackage{indentfirst}
+
+\definecolor{myOrange}{RGB}{217,77,26}
+\definecolor{myBlue}{RGB}{38,89,153}
+\definecolor{myYellow}{RGB}{242,179,26}
+
+%Команда для рисовки линий
+\newcommand\MyLine[4]{
+\begin{tikzpicture}[line width=#1]
+\draw[#2]
+(0,0) node[font=\scriptsize, text=black, above] {#3} -- 
+(1.5,0) node[font=\scriptsize, text=black, above] {#4};
+\end{tikzpicture}
+}
+%Команада для углов 1
+\newcommand{\MyAngleOne}[5]{
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+\fill[#1] (0.7,0) node[font=\scriptsize, text=black, right] {#4} -- 
+(0,0) node[font=\scriptsize, text=black, left] {#3} 
+arc (180:#2:0.7) node[font=\scriptsize, text=black, above] {#5} -- cycle;
+\end{tikzpicture}
+}
+%Команада для углов 2
+\newcommand{\MyAngleTwo}[5]{
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+\fill[#1] 
+(0,0) node[font=\scriptsize, text=black, left] {#3} -- 
+(0.7,0) node[font=\scriptsize, text=black, right] {#4} 
+arc (0:#2:0.7) node[font=\scriptsize, text=black, above] {#5} -- cycle;
+\end{tikzpicture}
+}
+
+\begin{document}
+
+\columnratio{0.75}
+\setlength{\columnsep}{5pt}
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\begin{paracol}{2}
+\begin{center}
+\hfill \LargeКНИГА I ПРЕДЛ. XXVI. ТЕОРЕМА \hfill{5\raisebox{-0.2em}{1}}\\
+\vspace{1cm}
+\LargeСлучай II.\\
+Теперь пусть \MyLine{3pt}{myOrange}{C}{A} = \MyLine{1.5pt}{myOrange}{F}{D}, лежат\\
+против равных углов
+\MyAngleOne{myOrange}{120}{A}{B}{C}
+и
+\MyAngleOne{myOrange}{120}{D}{E}{F}
+.\\
+Если такое возможно, пусть\\
+\begin{tikzpicture}[line width=1.5pt]
+\coordinate (D) at (0,0);
+\coordinate (G) at (1,0);
+\coordinate (E) at (1.5,0);
+\draw[myBlue] (D) -- (G);
+\draw[myBlue, dashed] (G) -- (E);
+\tkzLabelPoint[above](D){\scriptsize{D}}
+\tkzLabelPoint[above](E){\scriptsize{E}}
+\end{tikzpicture}
+> 
+\MyLine{3pt}{myBlue}{A}{B}
+, тогда возьмём\\
+\MyLine{1.5pt}{myBlue}{D}{G}
+=
+\MyLine{3pt}{myBlue}{A}{B}
+, проведём 
+\MyLine{1.5pt}{myYellow}{F}{G}
+.\\
+Тогда в
+\begin{tikzpicture}[line width=3pt] 
+\coordinate (A) at (0,0);
+\coordinate (B) at (1.5,0);
+\coordinate (C) at (0.5,1.5);
+\draw[myBlue] (A) -- (B);
+\draw[Black] (B) -- (C);
+\draw[myOrange] (C) -- (A);
+
+\tkzLabelPoint[left](A){\scriptsize{A}}
+\tkzLabelPoint[right](B){\scriptsize{B}}
+\tkzLabelPoint[above](C){\scriptsize{C}}
+
+\end{tikzpicture}
+и
+\begin{tikzpicture}[line width=1.5pt] 
+\coordinate (D) at (0,0);
+\coordinate (G) at (1,0);
+\coordinate (F) at (0.5,1.5);
+\draw[myBlue] (D) -- (G);
+\draw[myYellow] (G) -- (F);
+\draw[myOrange] (F) -- (D);
+
+\tkzLabelPoint[left](D){\scriptsize{D}}
+\tkzLabelPoint[right](G){\scriptsize{G}}
+\tkzLabelPoint[above](F){\scriptsize{F}}
+
+\end{tikzpicture}\\
+получим 
+\MyLine{3pt}{myOrange}{C}{A} 
+= 
+\MyLine{1.5pt}{myOrange}{F}{D},\\
+\MyLine{3pt}{myBlue}{A}{B} 
+= 
+\MyLine{1.5pt}{myBlue}{D}{G} 
+и
+\MyAngleTwo{myYellow}{75}{A}{B}{C}
+=
+\MyAngleTwo{myYellow}{75}{D}{E}{F},\\
+$\therefore$
+\MyAngleOne{myOrange}{120}{A}{B}{C}
+=
+\MyAngleOne{Black}{105}{D}{G}{F}
+(пр. I.$_{4}$)\\
+но
+\MyAngleOne{myOrange}{120}{A}{B}{C}
+=
+\MyAngleOne{myOrange}{120}{D}{E}{F}
+(гип.)\\
+$\therefore$
+\MyAngleOne{Black}{105}{D}{G}{F}
+=
+\MyAngleOne{myOrange}{120}{D}{E}{F}
+что не имеет смысла (пр. I.$_{16}$)\\
+Следовательно, ни \MyLine{3pt}{myBlue}{A}{B} ни
+\begin{tikzpicture}[line width=1.5pt]
+\coordinate (D) at (0,0);
+\coordinate (G) at (1,0);
+\coordinate (E) at (1.5,0);
+\draw[myBlue] (D) -- (G);
+\draw[myBlue, dashed] (G) -- (E);
+
+\tkzLabelPoint[above](D){\scriptsize{D}}
+\tkzLabelPoint[above](E){\scriptsize{E}}
+\end{tikzpicture}
+не больше другой, а значит они равны. Следовательно (согласно пр.I.$_{4}$) треугольники равны во всех отношениях.
+\end{center}
+\begin{flushright}
+ч.т.д.
+\end{flushright}
+
+\switchcolumn
+
+\vspace*{1cm}
+\begin{center}
+\begin{tikzpicture}[line width=3pt] 
+\coordinate (A) at (0,0);
+\coordinate (B) at (4.5,0);
+\coordinate (C) at (1.5,4.5);
+\path
+pic[fill=myOrange,angle radius=9mm] {angle = C--B--A}
+pic[fill=myYellow,angle radius=9mm] {angle = B--A--C};
+\draw[myBlue] (A) -- (B);
+\draw[Black] (B) -- (C);
+\draw[myOrange] (C) -- (A);
+
+\tkzLabelPoint[left](A){\scriptsize{A}}
+\tkzLabelPoint[right](B){\scriptsize{B}}
+\tkzLabelPoint[above](C){\scriptsize{C}}
+
+\end{tikzpicture}
+\hfill \break
+\begin{tikzpicture}[line width=1.5pt] 
+\coordinate (D) at (0,0);
+\coordinate (E) at (4.5,0);
+\coordinate (F) at (1.5,4.5);
+\coordinate (G) at (3,0);
+\path
+pic[fill=myOrange,angle radius=9mm] {angle = F--E--D}
+pic[fill=myYellow,angle radius=9mm] {angle = E--D--F}
+pic[fill=black,angle radius=9mm] {angle = F--G--D};
+\draw[myBlue] (D) -- (G);
+\draw[myBlue, dashed] (G) -- (E);
+\draw[Black] (E) -- (F);
+\draw[myOrange] (F) -- (D);
+\draw[myYellow] (F) -- (G);
+
+\tkzLabelPoint[left](D){\scriptsize{D}}
+\tkzLabelPoint[right](E){\scriptsize{E}}
+\tkzLabelPoint[above](F){\scriptsize{F}}
+\tkzLabelPoint[below](G){\scriptsize{G}}
+
+\end{tikzpicture}
+
+\end{center}
+\end{paracol}
+\end{document}

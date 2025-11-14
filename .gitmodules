@@ -1,0 +1,12 @@
+[submodule "1-2-programming/labs/lab-5"]
+	path = 1-2-programming/labs/lab-5
+	url = https://github.com/timur1516-itmo/prog-lab-5.git
+[submodule "1-2-programming/labs/lab-6"]
+	path = 1-2-programming/labs/lab-6
+	url = https://github.com/timur1516-itmo/prog-lab-6.git
+[submodule "1-2-programming/labs/lab-7"]
+	path = 1-2-programming/labs/lab-7
+	url = https://github.com/timur1516-itmo/prog-lab-7.git
+[submodule "1-2-programming/labs/lab-8"]
+	path = 1-2-programming/labs/lab-8
+	url = https://github.com/timur1516-itmo/prog-lab-8.git
