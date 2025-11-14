@@ -10,3 +10,42 @@
 [submodule "1-2-programming/labs/lab-8"]
 	path = 1-2-programming/labs/lab-8
 	url = https://github.com/timur1516-itmo/prog-lab-8.git
+[submodule "3-programming-languages/labs/lab-1"]
+	path = 3-programming-languages/labs/lab-1
+	url = https://github.com/timur1516-itmo/prog-lang-lab-1.git
+[submodule "3-programming-languages/labs/lab-2"]
+	path = 3-programming-languages/labs/lab-2
+	url = https://github.com/timur1516-itmo/prog-lang-lab-2.git
+[submodule "3-programming-languages/labs/lab-3"]
+	path = 3-programming-languages/labs/lab-3
+	url = https://github.com/timur1516-itmo/prog-lang-lab-3.git
+[submodule "3-programming-languages/labs/lab-4"]
+	path = 3-programming-languages/labs/lab-4
+	url = https://github.com/timur1516-itmo/prog-lang-lab-4.git
+[submodule "3-programming-languages/sems/sem-4"]
+	path = 3-programming-languages/sems/sem-4
+	url = https://github.com/timur1516-itmo/prog-lang-sem-4.git
+[submodule "3-programming-languages/sems/sem-7"]
+	path = 3-programming-languages/sems/sem-7
+	url = https://github.com/timur1516-itmo/prog-lang-sem-7.git
+[submodule "3-web/labs/lab-1"]
+	path = 3-web/labs/lab-1
+	url = https://github.com/timur1516-itmo/web-lab-1.git
+[submodule "3-web/labs/lab-2"]
+	path = 3-web/labs/lab-2
+	url = https://github.com/timur1516-itmo/web-lab-2.git
+[submodule "3-web/labs/lab-3"]
+	path = 3-web/labs/lab-3
+	url = https://github.com/timur1516-itmo/web-lab-3.git
+[submodule "3-web/labs/lab-4/frontend"]
+	path = 3-web/labs/lab-4/frontend
+	url = https://github.com/timur1516-itmo/web-lab-4-frontend.git
+[submodule "3-web/labs/lab-4/backend"]
+	path = 3-web/labs/lab-4/backend
+	url = https://github.com/timur1516-itmo/web-lab-4-backend-spring.git
+[submodule "4-computer-architecture/labs/lab-3"]
+	path = 4-computer-architecture/labs/lab-3
+	url = https://github.com/timur1516-itmo/computer-architecture-lab-3.git
+[submodule "4-computer-architecture/labs/lab-4"]
+	path = 4-computer-architecture/labs/lab-4
+	url = https://github.com/timur1516-itmo/computer-architecture-lab-4.git
