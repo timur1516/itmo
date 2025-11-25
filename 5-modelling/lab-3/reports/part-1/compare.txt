@@ -1,0 +1,125 @@
+           START TIME           END TIME  BLOCKS  FACILITIES  STORAGES
+                0.000          70600.000    31        3          3
+
+
+              NAME                       VALUE  
+          BUF_1                       10012.000
+          BUF_LEN_1                   10011.000
+          B_AVG                          15.000
+          E_BUF_1                         2.000
+          LAMBDA                          0.300
+          NODE_1                      10007.000
+          NODE_2                      10008.000
+          NODE_3                      10009.000
+          QUEUELEN                    10016.000
+          REJECT                         25.000
+          RN_A                           20.000
+          RN_B                          553.000
+          TIME_ALL                    10010.000
+          TO_N1                           5.000
+          TO_N2                          13.000
+          TO_N3                          19.000
+          T_A                             3.333
+          T_B                            15.000
+          UTIL1                       10013.000
+          UTIL2                       10014.000
+          UTIL3                       10015.000
+
+
+ LABEL              LOC  BLOCK TYPE     ENTRY COUNT CURRENT COUNT RETRY
+                    1    GENERATE         21171             0       0
+                    2    TRANSFER         21171             0       0
+                    3    TRANSFER         10451             0       0
+                    4    TRANSFER          7322             0       0
+TO_N1               5    TEST             10720             0       0
+                    6    QUEUE             4545             1       0
+                    7    ENTER             4544             0       0
+                    8    DEPART            4544             0       0
+                    9    ADVANCE           4544             1       0
+                   10    LEAVE             4543             0       0
+                   11    TABULATE          4543             0       0
+                   12    TERMINATE         4543             0       0
+TO_N2              13    TEST              3129             0       0
+                   14    ENTER             1885             0       0
+                   15    ADVANCE           1885             0       0
+                   16    LEAVE             1885             0       0
+                   17    TABULATE          1885             0       0
+                   18    TERMINATE         1885             0       0
+TO_N3              19    TEST              7322             0       0
+                   20    ENTER             2867             0       0
+                   21    ADVANCE           2867             1       0
+                   22    LEAVE             2866             0       0
+                   23    TABULATE          2866             0       0
+                   24    TERMINATE         2866             0       0
+REJECT             25    TERMINATE        11874             0       0
+                   26    GENERATE           706             0       0
+                   27    SAVEVALUE          706             0       0
+                   28    SAVEVALUE          706             0       0
+                   29    SAVEVALUE          706             0       0
+                   30    SAVEVALUE          706             0       0
+                   31    TERMINATE          706             0       0
+
+
+FACILITY         ENTRIES  UTIL.   AVE. TIME AVAIL. OWNER PEND INTER RETRY DELAY
+ NODE_1               0    0.000       0.000  1        0    0    0     0      0
+ NODE_2               0    0.000       0.000  1        0    0    0     0      0
+ NODE_3               0    0.000       0.000  1        0    0    0     0      0
+
+
+QUEUE              MAX CONT. ENTRY ENTRY(0) AVE.CONT. AVE.TIME   AVE.(-0) RETRY
+ BUF_1               2    1   4545    575     1.400     21.749     24.899   0
+
+
+STORAGE            CAP. REM. MIN. MAX.  ENTRIES AVL.  AVE.C. UTIL. RETRY DELAY
+ NODE_1              1    0   0     1     4544   1    0.945  0.945    0    1
+ NODE_2              1    1   0     1     1885   1    0.399  0.399    0    0
+ NODE_3              1    0   0     1     2867   1    0.602  0.602    0    0
+
+
+TABLE              MEAN    STD.DEV.       RANGE           RETRY FREQUENCY CUM.%
+ TIME_ALL         25.412   23.504                           0
+                                       _  -        1.000           350     3.77
+                                   1.000  -        2.000           327     7.28
+                                   2.000  -        3.000           324    10.77
+                                   3.000  -        4.000           307    14.07
+                                   4.000  -        5.000           285    17.14
+                                   5.000  -        6.000           248    19.81
+                                   6.000  -        7.000           276    22.78
+                                   7.000  -        8.000           296    25.96
+                                   8.000  -        9.000           255    28.71
+                                   9.000  -       10.000           228    31.16
+                                  10.000  -       11.000           227    33.60
+                                  11.000  -       12.000           220    35.97
+                                  12.000  -       13.000           204    38.16
+                                  13.000  -       14.000           195    40.26
+                                  14.000  -       15.000           203    42.45
+                                  15.000  -       16.000           182    44.40
+                                  16.000  -       17.000           196    46.51
+                                  17.000  -       18.000           191    48.57
+                                  18.000  -       19.000           180    50.51
+                                  19.000  -  _                    4600   100.00
+ BUF_LEN_1        21.747   20.915                           0
+                                       _  -        0.500           614    13.51
+                                   0.500  -        1.000            46    14.52
+                                   1.000  -        1.500            41    15.43
+                                   1.500  -        2.000            60    16.75
+                                   2.000  -        2.500            48    17.80
+                                   2.500  -        3.000            54    18.99
+                                   3.000  -        3.500            43    19.94
+                                   3.500  -        4.000            40    20.82
+                                   4.000  -        4.500            46    21.83
+                                   4.500  -  _                    3552   100.00
+
+
+SAVEVALUE               RETRY       VALUE
+ UTIL1                    0              0                            
+ UTIL2                    0              0                            
+ UTIL3                    0              0                            
+ QUEUELEN                 0          1.000                            
+
+
+FEC XN   PRI         BDT      ASSEM  CURRENT  NEXT  PARAMETER    VALUE
+ 21877    0       70600.891   21877     21     22
+ 21878    0       70604.868   21878      0      1
+ 21867    0       70619.186   21867      9     10
+ 21879    0       70700.000   21879      0     26

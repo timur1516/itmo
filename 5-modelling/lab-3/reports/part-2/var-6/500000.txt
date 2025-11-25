@@ -1,0 +1,122 @@
+
+
+              GPSS World Simulation Report - lab3.272.1
+
+
+                   Tuesday, November 25, 2025 15:43:21  
+
+           START TIME           END TIME  BLOCKS  FACILITIES  STORAGES
+                0.000       14958260.060    25        0          3
+
+
+              NAME                       VALUE  
+          BUF_1                       10019.000
+          BUF_LEN_1                   10018.000
+          CLOSEERROR                  UNSPECIFIED
+          ERL_2                       10020.000
+          ERRORCODES                  10021.000
+          E_BUF_1                        10.000
+          FILEID                      UNSPECIFIED
+          FILENAME                    UNSPECIFIED
+          FILEPOSITION                10022.000
+          GETRANDOMNUMBERFROMFILE     10000.000
+          HYPER1                      10001.000
+          K_ERL                           2.000
+          LINEFROMFILE                UNSPECIFIED
+          NODE_1                      10014.000
+          NODE_2                      10015.000
+          NODE_3                      10016.000
+          OPENERROR                   UNSPECIFIED
+          QQ                              0.500
+          REJECT                         25.000
+          RN_A                           20.000
+          RN_B                          553.000
+          RN_ERL1                        31.000
+          RN_ERL2                       125.000
+          RN_H                           91.000
+          TIME_ALL                    10017.000
+          TO_N1                           5.000
+          TO_N2                          13.000
+          TO_N3                          19.000
+          TT_1                           59.166
+          TT_2                            0.737
+          T_A                            22.892
+          T_B                            15.000
+
+
+ LABEL              LOC  BLOCK TYPE     ENTRY COUNT CURRENT COUNT RETRY
+                    1    GENERATE        500001             0       0
+                    2    TRANSFER        500001             0       0
+                    3    TRANSFER        250126             0       0
+                    4    TRANSFER        174834             0       0
+TO_N1               5    TEST            249875             0       0
+                    6    QUEUE           249822             0       0
+                    7    ENTER           249822             0       0
+                    8    DEPART          249822             0       0
+                    9    ADVANCE         249822             1       0
+                   10    LEAVE           249821             0       0
+                   11    TABULATE        249821             0       0
+                   12    TERMINATE       249821             0       0
+TO_N2              13    TEST             75292             0       0
+                   14    ENTER            62472             0       0
+                   15    ADVANCE          62472             0       0
+                   16    LEAVE            62472             0       0
+                   17    TABULATE         62472             0       0
+                   18    TERMINATE        62472             0       0
+TO_N3              19    TEST            174834             0       0
+                   20    ENTER           118415             0       0
+                   21    ADVANCE         118415             0       0
+                   22    LEAVE           118415             0       0
+                   23    TABULATE        118415             0       0
+                   24    TERMINATE       118415             0       0
+REJECT             25    TERMINATE        69292             0       0
+
+
+QUEUE              MAX CONT. ENTRY ENTRY(0) AVE.CONT. AVE.TIME   AVE.(-0) RETRY
+ BUF_1              10    0 249822 128954     0.235     14.045     29.029   0
+
+
+STORAGE            CAP. REM. MIN. MAX.  ENTRIES AVL.  AVE.C. UTIL. RETRY DELAY
+ NODE_1              1    0   0     1   249822   1    0.250  0.250    0    0
+ NODE_2              1    1   0     1    62472   1    0.063  0.063    0    0
+ NODE_3              1    1   0     1   118415   1    0.119  0.119    0    0
+
+
+TABLE              MEAN    STD.DEV.       RANGE           RETRY FREQUENCY CUM.%
+ TIME_ALL         23.138   25.037                           0
+                                       _  -        1.000         20115     4.67
+                                   1.000  -        2.000         18999     9.08
+                                   2.000  -        3.000         17880    13.23
+                                   3.000  -        4.000         17044    17.19
+                                   4.000  -        5.000         16219    20.96
+                                   5.000  -        6.000         15645    24.59
+                                   6.000  -        7.000         14774    28.02
+                                   7.000  -        8.000         13815    31.23
+                                   8.000  -        9.000         13434    34.34
+                                   9.000  -       10.000         12788    37.31
+                                  10.000  -       11.000         12079    40.12
+                                  11.000  -       12.000         11406    42.77
+                                  12.000  -       13.000         10807    45.28
+                                  13.000  -       14.000         10277    47.66
+                                  14.000  -       15.000          9874    49.95
+                                  15.000  -       16.000          9457    52.15
+                                  16.000  -       17.000          9145    54.27
+                                  17.000  -       18.000          8469    56.24
+                                  18.000  -       19.000          7936    58.08
+                                  19.000  -  _                  180545   100.00
+ BUF_LEN_1        14.045   24.736                           0
+                                       _  -        0.500        131054    52.46
+                                   0.500  -        1.000          2050    53.28
+                                   1.000  -        1.500          1984    54.07
+                                   1.500  -        2.000          1977    54.87
+                                   2.000  -        2.500          1910    55.63
+                                   2.500  -        3.000          1908    56.39
+                                   3.000  -        3.500          1870    57.14
+                                   3.500  -        4.000          1786    57.86
+                                   4.000  -        4.500          1829    58.59
+                                   4.500  -  _                  103454   100.00
+
+
+FEC XN   PRI         BDT      ASSEM  CURRENT  NEXT  PARAMETER    VALUE
+500000    0    14958265.108   500000      9     10
+500002    0    14958279.944   500002      0      1
