@@ -135,7 +135,7 @@ def build_form2_table_from_reports(folder_path: str):
         if i == 0 or data_rows[i-1]["Вер-ть потери"] == 0.0:
             row["П(%)"] = '-'
         else:
-            row["П(%)"] = round(abs(loss_prob / data_rows[i-1]["Вер-ть потери"]), 2)
+            row["П(%)"] = round(abs(loss_prob / data_rows[i-1]["Вер-ть потери"] - 1)*100, 2)
 
         # О(%) - относительное изменение Ср.вр. ож. по сравнению с предыдущим
         current_wait = row["Ср.вр. ож."]
@@ -144,7 +144,7 @@ def build_form2_table_from_reports(folder_path: str):
         else:
             prev_wait = data_rows[i-1]["Ср.вр. ож."]
             if prev_wait is not None and prev_wait != 0:
-                row["О(%)"] = round(abs((current_wait - prev_wait) / prev_wait) * 100, 2)
+                row["О(%)"] = round(abs(current_wait / prev_wait - 1) * 100, 2)
             else:
                 row["О(%)"] = None
 
